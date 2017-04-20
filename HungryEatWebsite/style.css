@@ -1,0 +1,47 @@
+body {
+  background-color: #FBD66F;
+}
+
+#welcome {
+  background-color: #56BFB5;
+  height: 200px;
+}
+
+#make-a-reservation {
+  height: 150px;
+ 
+}
+
+#form {
+  margin: 25px 20px;
+  padding: 25px;
+  border: solid black 4px;
+}
+
+ button {
+  background-color: #F5F093;  
+  
+}
+
+input, button, h2{
+  margin-left: 20px;
+}
+
+#who-else {
+  height: 600px;
+  background-color: #F5F093; 
+  float: left;
+  width: 50%
+}
+
+#find-us {
+   background-color: #56BFB5;
+    height:600px;
+  
+}
+#map {
+  height: 300px;
+  border:  6px solid black;
+  margin:  30px 20px;
+ 
+}

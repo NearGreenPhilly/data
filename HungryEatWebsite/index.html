@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title> Hungry ... Eat</title>
+  <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+      <div id="welcome">
+        <h1> You're Hungry, Eat!</h1>
+        <img src="http://res.cloudinary.com/tech-stories/image/upload/v1492652494/Screen_Shot_2017-04-19_at_12.57.53_PM_jqs1gg.png"
+      </div>
+      
+        <h2> Make a Reservation </h2>
+        <div id="make-a-reservation">
+          <div id="form">
+     <form class="reservation-form">
+       <input type="text" class="reservation-name" placeholder = "Name">
+
+        <input type="text" class="reservation-number"  placeholder = "For how many?" >
+       <br>
+       <br>
+       <button class="reservation-data">Reserve Now </button>
+      </form>
+          </div>
+      <div>  
+        <script id="template" type="text/x-handlebars-template">
+        	<li data-id= {{reservationID}}">
+          <p> {{name}}, your table for {{number}} is set! </p>
+        </script>
+        </div>
+    </div>
+  
+  
+  <div id="who-else">
+    <h2> Who's Coming to Dinner?  </h2>
+    <ul class="reservations"></ul>
+    
+  </div>
+  <!-- next: add a wait to delete, add a dropdown with the day and a reservationData.day, and a way that the list will cycle through and not list endlessly-->
+  
+  <div id="find-us">
+    <h2> Find Us </h2>
+    <div id="map"></div>
+    
+    
+  </div>
+  
+  
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.6/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- handlebars -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <!-- custom js -->
+  <script src="js/main.js"></script>
+  
+  <!-- google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmyWb4ZGus2SQqBCnVo_QWkzyFKMXgStA&callback=initMap"
+  async defer></script>
+  
+
+  
+</body>
+</html>
